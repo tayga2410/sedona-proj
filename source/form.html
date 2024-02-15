@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/ptsans.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <title>Форма отзыва</title>
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo">
+      <img class="main-header__logo-image" src="img/sedona-logo.svg" width="185" height="96" alt="Логотип Седоны."></a>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню.</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--current" href="#">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://www.htmlacademy.ru">Html Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <section class="intro">
+      <h1 class="visually-hidden">Отзыв о Седоне</h1>
+      <div class="intro__container intro__container--form-page">
+        <picture class="intro__pictures intro__pictures--form-page">
+          <source type="image/webp" media="(min-width: 1200px)"
+            srcset="img/background-form-desktop.webp 1x, img/background-form-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/background-form-tablet.webp 1x, img/background-form-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/background-form-mobile.webp 1x, img/background-form-mobile@2x.webp 2x">
+          <source media="(min-width: 1200px)"
+            srcset="img/background-form-desktop.jpg 1x, img/background-form-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/background-form-tablet.jpg 1x, img/background-form-tablet@2x.jpg 2x">
+          <img class="intro__background-image intro__background-image--form-page" src="img/background-form-mobile.jpg"
+            srcset="img/background-form-mobile@2x.jpg 2x" width="320" height="158" alt="изображение гор Седоны.">
+        </picture>
+        <img class="intro__text-image intro__text-image--form-page" src="img/sedona-text.svg" width="229" height="39"
+          alt="Седона.">
+        <span class="intro__divider"></span>
+      </div>
+      <h2 class="intro__lead intro__lead--form-page">
+        Оставьте свой отзыв
+      </h2>
+      <p class="intro__description intro__description--form-page">
+        Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+      </p>
+    </section>
+
+    <section class="hotel-review">
+      <form class="hotel-review__form" action="https://echo.htmlacademy.ru/" method="get">
+        <div class="hotel-review__text-wrapper">
+          <fieldset class="hotel-review__fieldset">
+            <h3 class="hotel-review__title">Представьтесь:</h3>
+            <ul class="hotel-review__text-list">
+              <li class="hotel-review__text-item">
+                <label class="hotel-review__text-label"><span class="hotel-review__name">Имя*:</span>
+                  <input class="hotel-review__text-input" type="text" name="name" placeholder="Пётр">
+                </label>
+              </li>
+              <li class="hotel-review__text-item">
+                <label class="hotel-review__text-label"><span class="hotel-review__name">Фамилия*:</span>
+                  <input class="hotel-review__text-input" type="text" name="surname" placeholder="Пустота">
+                </label>
+              </li>
+              <li class="hotel-review__text-item">
+                <label class="hotel-review__text-label"><span class="hotel-review__name">Отчество:</span>
+                  <input class="hotel-review__text-input" type="text" name="middle-name" placeholder="Викторович">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="hotel-review__fieldset">
+            <h3 class="hotel-review__title">Контактная информация:</h3>
+            <ul class="hotel-review__text-list">
+              <li class="hotel-review__text-item">
+                <div class="hotel-review__input-wrapper">
+                  <label class="hotel-review__text-label"><span class="hotel-review__name">Контактный телефон*:</span>
+                    <input class="hotel-review__text-input" type="tel" name="phone" placeholder="Введите телефон">
+                    <span class="hotel-review__text-icon hotel-review__text-icon--telephone"></span>
+                  </label>
+                </div>
+              </li>
+              <li class="hotel-review__text-item">
+                <div class="hotel-review__input-wrapper">
+                  <label class="hotel-review__text-label"><span class="hotel-review__name">Электронная почта*:</span>
+                    <input class="hotel-review__text-input" type="email" name="user-email" placeholder="Введите e-mail">
+                    <span class="hotel-review__text-icon hotel-review__text-icon--mail"></span>
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <fieldset class="hotel-review__fieldset hotel-review__fieldset--radio">
+          <h3 class="hotel-review__title hotel-review__title--double-line">Ваше общее впечатление:</h3>
+          <ul class="hotel-review__radio-list">
+            <li class="hotel-review__radio-item">
+              <label class="hotel-review__radio-label">
+                <input class="hotel-review__radio-input  visually-hidden" type="radio" checked name="impression"
+                  value="positive">
+                <span class="hotel-review__control-mark"></span>
+                <span class="hotel-review__radio-name">Скорее положительное</span>
+              </label>
+            </li>
+            <li class="hotel-review__radio-item">
+              <label class="hotel-review__radio-label">
+                <input class="hotel-review__radio-input  visually-hidden" type="radio" name="impression"
+                  value="negative">
+                <span class="hotel-review__control-mark"></span>
+                <span class="hotel-review__radio-name">Скорее отрицательное</span>
+              </label>
+            </li>
+            <li class="hotel-review__radio-item">
+              <label class="hotel-review__radio-label">
+                <input class="hotel-review__radio-input  visually-hidden" type="radio" name="impression"
+                  value="neutral">
+                <span class="hotel-review__control-mark"></span>
+                <span class="hotel-review__radio-name">Затрудняюсь ответить</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="hotel-review__fieldset hotel-review__fieldset--checkbox">
+          <h3 class="hotel-review__title hotel-review__title--double-line">Посещенные<br> достопримечательности</h3>
+          <ul class="hotel-review__checkbox-list">
+            <li class="hotel-review__checkbox-item">
+              <label class="hotel-review__checkbox-label">
+                <input class="hotel-review__checkbox-input  visually-hidden" type="checkbox" checked
+                  name="devil-bridge">
+                <span class="hotel-review__control-mark"></span>
+                <span class="hotel-review__checkbox-name">Мост Дьявола</span>
+              </label>
+            </li>
+            <li class="hotel-review__checkbox-item">
+              <label class="hotel-review__checkbox-label">
+                <input class="hotel-review__checkbox-input  visually-hidden" type="checkbox" checked
+                  name="bell-mountain">
+                <span class="hotel-review__control-mark"></span>
+                <span class="hotel-review__checkbox-name">Гора-Колокол</span>
+              </label>
+            </li>
+            <li class="hotel-review__checkbox-item">
+              <label class="hotel-review__checkbox-label">
+                <input class="hotel-review__checkbox-input  visually-hidden" type="checkbox" checked name="slide-park">
+                <span class="hotel-review__control-mark"></span>
+                <span class="hotel-review__checkbox-name">Слайд-парк</span>
+              </label>
+            </li>
+            <li class="hotel-review__checkbox-item">
+              <label class="hotel-review__checkbox-label">
+                <input class="hotel-review__checkbox-input  visually-hidden" type="checkbox" name="red-mountains">
+                <span class="hotel-review__control-mark"></span>
+                <span class="hotel-review__checkbox-name">Красные скалы</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="hotel-review__fieldset hotel-review__fieldset--textarea">
+          <h3 class="hotel-review__title hotel-review__title--double-line">Опишите свои эмоции:</h3>
+          <div class="hotel-review__textarea-wrapper">
+            <label class="hotel-review__textarea-label">
+              <textarea class="hotel-review__textarea" name="message"
+                placeholder="Опишите подробно все свои восторги"></textarea>
+            </label>
+          </div>
+        </fieldset>
+        <div class="hotel-review__button-container">
+          <button class="hotel-review__button button" type="submit">Отправить отзыв
+          </button>
+          <span class="hotel-review__required-field">* - обязательные поля</span>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <span class="main-footer__text">#visitsedona</span>
+    <ul class="main-footer__social social">
+      <li class="social__item">
+        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+          <span class="visually-hidden">Vkontakte.</span>
+          <svg class="social__icon" width="48" height="48">
+            <use xlink:href="img/sprite.svg#vkontakte-logo"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--telegram" href="tg://resolve?domain=htmlacademy">
+          <span class="visually-hidden">Telegram.</span>
+          <svg class="social__icon" width="48" height="48">
+            <use xlink:href="img/sprite.svg#telegram-logo"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+          <span class="visually-hidden">Youtube.</span>
+          <svg class="social__icon" width="48" height="48">
+            <use xlink:href="img/sprite.svg#youtube-logo"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <a class="copyright" href="https://htmlacademy.ru/" target="_blank">
+      <p class="copyright__text">Разработано</p>
+      <svg class="copyright__icon" width="27" height="34">
+        <use xlink:href="img/sprite.svg#htmlacademy-icon"></use>
+      </svg>
+    </a>
+  </footer>
+
+  <div class="modal modal--failure">
+    <section class="modal__content modal__content--failure">
+      <h3 class="modal__title">что-то пошло не так!</h3>
+      <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="modal__button button">Ок</button>
+    </section>
+  </div>
+  <div class="modal modal--success">
+    <section class="modal__content modal__content--success">
+      <h3 class="modal__title modal__title--success">Ваш отзыв отправлен!</h3>
+      <p class="modal__description modal__description--success">Спасибо за ваше участие, ваш отзыв уже поступил к
+        нам.<br>В ближайшее время мы
+        опубликуем его на сайте.</p>
+      <div class="modal__button-layout">
+        <button class="modal__close-button button">Закрыть окно</button>
+      </div>
+    </section>
+  </div>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>

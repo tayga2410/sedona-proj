@@ -1,0 +1,134 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  text-transform: uppercase;
+  text-align: center;
+  display: none;
+}
+
+.modal__content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: $white;
+  z-index: 2;
+
+  &--failure {
+    width: 320px;
+    height: 280px;
+
+    @media screen and (min-width: $tablet-width) {
+      width: 400px;
+      height: 347px;
+      margin: auto;
+      padding: 50px 0 0 0;
+    }
+  }
+
+  &--success {
+    width: 320px;
+    height: 323px;
+    padding: 39px 0 0 0;
+
+    @media screen and (min-width: $tablet-width) {
+      width: 640px;
+      height: 347px;
+      padding: 52px 0 0 0;
+    }
+  }
+}
+
+.modal__title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-bottom: 26px;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    max-width: 240px;
+    margin: 0 auto 22px auto;
+  }
+
+  &--success {
+    @media screen and (min-width: $tablet-width) {
+      font-size: 30px;
+      line-height: 26px;
+      max-width: 444px;
+      margin: 0 auto 30px auto;
+    }
+  }
+}
+
+.modal__description {
+  max-width: 237px;
+  margin: 0 auto 28px auto;
+
+  @media screen and (min-width: $tablet-width) {
+    max-width: 307px;
+    margin: 0 auto 48px auto;
+  }
+
+  &--success {
+    max-width: 250px;
+    margin: 0 auto 50px auto;
+
+    @media screen and (min-width: $tablet-width) {
+      max-width: 444px;
+      margin: 0 auto 52px auto;
+    }
+  }
+}
+
+.modal__button {
+  margin: 0 auto;
+  max-width: 180px;
+  width: 100%;
+  min-height: 58px;
+  padding: 18px 64px 14px 63px;
+  font-size: 18px;
+
+  @media screen and (min-width: $tablet-width) {
+    max-width: 272px;
+  }
+}
+
+.modal__close-button {
+  margin: 0 auto;
+  width: 100%;
+  min-height: 58px;
+  padding: 18px 64px 14px 63px;
+  max-width: 280px;
+  font-size: 18px;
+
+  @media screen and (min-width: $tablet-width) {
+    max-width: 458px;
+    font-size: 21px;
+  }
+}
+
+.modal__button-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 98px;
+  background-color: #f2f2f2;
+
+  @media screen and (min-width: $tablet-width) {
+    min-height: 146px;
+  }
+}

@@ -1,0 +1,119 @@
+.hotel-search {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hotel-search__title {
+  margin: 0 0 21px 0;
+  padding: 41px 0 0 0;
+  max-width: 262px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media screen and (min-width: $tablet-width) {
+    max-width: 435px;
+    margin: 0 0 31px 0;
+    padding: 60px 0 0 0;
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    line-height: 30px;
+    margin: 0 0 30px 0;
+  }
+}
+
+.hotel-search__description {
+  max-width: 262px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 32px 0;
+
+  @media screen and (min-width: $tablet-width) {
+    max-width: 435px;
+    margin: 0 0 44px 0;
+  }
+
+  br {
+    display: none;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    max-width: 435px;
+    margin: 0 0 44px 0;
+
+    br {
+      display: inline;
+    }
+  }
+}
+
+.hotel-search__button-wrapper {
+  padding: 0 0 49px 0;
+
+  @media screen and (min-width: $tablet-width) {
+    min-width: 458px;
+    padding: 0 0 55px 0;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding: 0 0 66px 0;
+  }
+}
+
+.hotel-search__button {
+  min-width: 284px;
+  min-height: 58px;
+  font-size: 21px;
+
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    min-width: 458px;
+  }
+}
+
+.hotel-search__map {
+  position: relative;
+  width: 100%;
+  min-height: 350px;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.hotel-search__map-image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.hotel-search__map-dot {
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

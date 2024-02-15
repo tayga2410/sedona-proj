@@ -1,0 +1,82 @@
+.presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin: 0 0 40px 0;
+    padding: 0 60px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin: 0 0 84px 0;
+    padding: 0 200px;
+  }
+}
+
+.presentation__lead {
+  margin: 0 0 26px 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 30px;
+    margin: 0 0 32px 0;
+  }
+}
+
+.presentation__description {
+  margin: 0 0 38px 0;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $tablet-width) {
+    margin: 0 0 89px 0;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin: 0 0 87px 0;
+  }
+}
+
+.presentation__text-wrapper {
+  max-width: 266px;
+
+  @media screen and (min-width: $tablet-width) {
+    max-width: 445px;
+  }
+}
+
+.presentation__wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.presentation__image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+
+  @media screen and (min-width: $tablet-width) {
+    height: 500px;
+  }
+}
+
+.presentation__link {
+  cursor: pointer;
+}
+
+.presentation__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 48px;
+  min-height: 54px;
+  background: url("../img/play-button.png") no-repeat;
+  border: none;
+}

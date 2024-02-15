@@ -1,0 +1,39 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin: 0;
+}
+
+.copyright__text {
+  margin: 0;
+  margin-right: 12px;
+  font-size: 14px;
+  line-height: 21px;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.copyright:hover .copyright__text {
+  color: $blue;
+}
+
+.copyright:active .copyright__text {
+  color: #b3b3b3;
+}
+
+.copyright__icon {
+  width: 28px;
+  height: 35px;
+  fill: $black;
+  flex-shrink: 0;
+
+  &:hover {
+    fill: $blue;
+  }
+
+  &:active {
+    fill: #b3b3b3;
+  }
+}
